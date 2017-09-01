@@ -1,0 +1,28 @@
+    <link rel="stylesheet" href="__PUBLIC__/kindeditor/themes/default/default.css" />
+    <script charset="utf-8" src="__PUBLIC__/kindeditor/kindeditor-min.js"></script>
+    <script charset="utf-8" src="__PUBLIC__/kindeditor/lang/zh_CN.js"></script>
+    $(function(){
+            var editor;
+            KindEditor.ready(function(K) {
+                editor = K.create('textarea[name="content"]', {
+                    allowFileManager : true,
+                    autoHeightMode : true,
+                    height:500,
+                    afterCreate : function() {
+                        //this.loadPlugin('autoheight');
+
+                    },
+                    afterUpload : function(url) {
+                        var firstimageoption = '<option value="' + url + '">' + url + '</option>';
+                        var selectoption = '<option value="' + url + '" selected="selected">' + url + '</option>';
+                        $("#firstimage").append(firstimageoption);
+                        $("#images").append(selectoption);
+                    }
+                });
+            });
+        })
+
+          var content = $(".ke-edit-iframe").contents().find("body").html();
+
+
+         <textarea name="content" style="width:670px; height:400px; visibility:hidden;" id="content">{$data.content|html_entity_decode|stripslashes}</textarea>

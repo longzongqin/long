@@ -1,0 +1,37 @@
+.loading{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+    z-index: 9999;
+    display: none;
+}
+.loading-back{
+    background: black ;
+    position: fixed ;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: 999 !important;
+}
+.loading .loading-div{
+    text-align: center;
+    z-index: 9999 !important;
+    position: relative;
+}
+.loading-div img{
+    width: 200px;
+    border-radius: 20px;
+
+}
+.loading-div p{
+    color: white;
+}
+
+#SOHUCS #SOHU_MAIN .module-mobile-user-center{
+    margin-top: 50px;
+}

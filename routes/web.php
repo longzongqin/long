@@ -44,6 +44,7 @@ Route::group(['namespace' => 'Common'],function (){
     Route::post('/common/saveVideoUrl','CommonController@saveVideoUrl');
     Route::any('/async/updateArticleHtml','AsyncController@updateArticleHtml');
     Route::any('/async/addLog','AsyncController@addLog');
+    Route::any('/async/addSiteMap','AsyncController@addSiteMap');
 
 });
 

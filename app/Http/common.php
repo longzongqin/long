@@ -5,6 +5,6 @@ function getVideoImg($url){
     return "http://video.longzongqin.".$urlArr[2].".jpg";
 }
 
-function publicPath(){
-    return "/long/public/";
+function p($url=""){
+    return "/long/public/".$url;
 }

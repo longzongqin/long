@@ -10,6 +10,6 @@
 
 @section('content')
     <div class="main-content">
-        <img src="{{ publicPath() }}img/loading.gif" width="100%">
+        <img src="{{ p() }}img/loading.gif" width="100%">
     </div>
 @endsection

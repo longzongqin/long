@@ -72,7 +72,7 @@
     </div>
 
 
-    <script type="text/javascript" src="{{ publicPath() }}js/vue.min.js"></script>
+    <script type="text/javascript" src="{{ p() }}js/vue.min.js"></script>
     <script>
         $(function(){
             $("#category-search").addClass("active");

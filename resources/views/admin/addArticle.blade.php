@@ -102,7 +102,7 @@
                     <td><label class="control-label">文章封面</label></td>
                     <td>
                         <div>
-                            <img id="showImg" onclick="addImg();" src="{{ publicPath() }}img/add-pic.png" width="64px" height="64px">
+                            <img id="showImg" onclick="addImg();" src="{{ p() }}img/add-pic.png" width="64px" height="64px">
                             <button class="btn" style="margin-left: 10px;" onclick="$('#imgDialog').modal('show');">选择封面</button>
                         </div>
                     </td>
@@ -111,7 +111,7 @@
                     <td><label class="control-label">上传视频</label></td>
                     <td>
                         <div id="container">
-                            <img src="{{ publicPath() }}img/add-pic.png" width="64px" id="selectfiles">
+                            <img src="{{ p() }}img/add-pic.png" width="64px" id="selectfiles">
                             <span style="margin-left: 10px;">上传视频默认使用视频代替文章封面</span>
                             <button class="btn btn-danger" style="margin-left: 10px; display: none;" id="delBtn" onclick="delVideo();">删除视频</button>
                         </div>
@@ -197,15 +197,15 @@
     </div>
 
 
-    <script type="text/javascript" charset="utf-8" src="{{ publicPath() }}ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="{{ publicPath() }}ueditor/ueditor.all.min.js"> </script>
-    <script type="text/javascript" charset="utf-8" src="{{ publicPath() }}ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ p() }}ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ p() }}ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="{{ p() }}ueditor/lang/zh-cn/zh-cn.js"></script>
 
-    <script type="text/javascript" src="{{ publicPath() }}js/exif.js"></script>
-    <script type="text/javascript" src="{{ publicPath() }}js/uploadImage.js"></script>
-    <script type="text/javascript" src="{{ publicPath() }}oss/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
-    <script type="text/javascript" src="{{ publicPath() }}oss/upload-video.js"></script>
-    <script type="text/javascript" src="{{ publicPath() }}js/vue.min.js"></script>
+    <script type="text/javascript" src="{{ p() }}js/exif.js"></script>
+    <script type="text/javascript" src="{{ p() }}js/uploadImage.js"></script>
+    <script type="text/javascript" src="{{ p() }}oss/lib/plupload-2.1.2/js/plupload.full.min.js"></script>
+    <script type="text/javascript" src="{{ p() }}oss/upload-video.js"></script>
+    <script type="text/javascript" src="{{ p() }}js/vue.min.js"></script>
     <script>
         var ue = UE.getEditor('editor');
         var isDefaultImg = 0;

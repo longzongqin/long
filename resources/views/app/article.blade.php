@@ -93,7 +93,7 @@
     <style id="jsStyle">
 
     </style>
-    <script src="{{ publicPath() }}ueditor/ueditor.parse.min.js"></script>
+    <script src="{{ p() }}ueditor/ueditor.parse.min.js"></script>
     <link rel="stylesheet" href="//g.alicdn.com/de/prismplayer/1.5.7/skins/default/index.css" />
     <script type="text/javascript" src="//g.alicdn.com/de/prismplayer/1.5.7/prism-min.js"></script>
     <script>
@@ -146,7 +146,7 @@
                 $("#jsStyle").html(".syntaxhighlighter td.code .container{top: -15px !important;}");
             }
             uParse('.article', {
-                rootPath: '{{ publicPath() }}ueditor/'
+                rootPath: '{{ p() }}ueditor/'
             });
 
         });

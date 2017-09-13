@@ -62,7 +62,7 @@
                 <img src="{{ $v->imgUrl }}?x-oss-process=image/resize,m_fill,h_300,w_450,limit_0" onerror="defaultImg(this);">
                 <h4>{{ $v->title }}</h4>
                 @if(!empty($v->videoUrl))
-                <img src="{{ publicPath() }}img/video.png" class="videoIcon" />
+                <img src="{{ p() }}img/video.png" class="videoIcon" />
                 @endif
             </div>
         </div>

@@ -9,15 +9,15 @@
     <meta name="keywords" content="{{ session('config.keywords') }}">
     <meta name="description" itemprop="description" content="{{ session('config.description') }}">
     <meta name="author" content="{{ session('config.author') }}">
-    <link rel="icon" href="{{ publicPath() }}img/favicon.ico">
+    <link rel="icon" href="{{ p() }}img/favicon.ico">
 
     <title>{{ session('config.webName') }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ publicPath() }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <script src="{{ publicPath() }}bootstrap/js/jquery.min.js"></script>
-    <script src="{{ publicPath() }}bootstrap/js/bootstrap.min.js"></script>
-    <script src="{{ publicPath() }}js/base.js"></script>
+    <link href="{{ p() }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <script src="{{ p() }}bootstrap/js/jquery.min.js"></script>
+    <script src="{{ p() }}bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ p() }}js/base.js"></script>
 
     <style>
         .dropdown-menu > li > a{
@@ -37,7 +37,7 @@
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">
-                <img alt="Brand" src="{{ publicPath() }}img/logo.png" style="width: 30px; margin-top: -5px;">
+                <img alt="Brand" src="{{ p() }}img/logo.png" style="width: 30px; margin-top: -5px;">
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>

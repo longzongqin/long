@@ -27,9 +27,9 @@
 
 
 
-    <script type="text/javascript" charset="utf-8" src="{{ publicPath() }}ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="{{ publicPath() }}ueditor/ueditor.all.min.js"> </script>
-    <script type="text/javascript" charset="utf-8" src="{{ publicPath() }}ueditor/lang/zh-cn/zh-cn.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ p() }}ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="{{ p() }}ueditor/ueditor.all.min.js"> </script>
+    <script type="text/javascript" charset="utf-8" src="{{ p() }}ueditor/lang/zh-cn/zh-cn.js"></script>
 
     <script>
         var ue = UE.getEditor('editor');

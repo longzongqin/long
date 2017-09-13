@@ -11,16 +11,16 @@
     <meta name="description" itemprop="description" content="{{ session('config.description') }}">
     @show
     <meta name="author" content="{{ session('config.author') }}">
-    <link rel="icon" href="{{ publicPath() }}img/favicon.ico">
+    <link rel="icon" href="{{ p() }}img/favicon.ico">
 
     <title>@yield('title'){{ session('config.webName') }}</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="{{ publicPath() }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="{{ publicPath() }}css/base.css" rel="stylesheet">
-    <script src="{{ publicPath() }}bootstrap/js/jquery.min.js"></script>
-    <script src="{{ publicPath() }}bootstrap/js/bootstrap.min.js"></script>
-    <script src="{{ publicPath() }}js/base.js"></script>
+    <link href="{{ p() }}bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="{{ p() }}css/base.css" rel="stylesheet">
+    <script src="{{ p() }}bootstrap/js/jquery.min.js"></script>
+    <script src="{{ p() }}bootstrap/js/bootstrap.min.js"></script>
+    <script src="{{ p() }}js/base.js"></script>
 
     <style>
         .dropdown-menu > li > a{
@@ -120,7 +120,7 @@
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">
-                <img alt="Brand" src="{{ publicPath() }}img/logo.png" style="width: 30px; margin-top: -5px;">
+                <img alt="Brand" src="{{ p() }}img/logo.png" style="width: 30px; margin-top: -5px;">
             </a>
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only"></span>
@@ -174,12 +174,12 @@
                 @endforeach
                 <li class="dropdown" id="category-search">
                     <a href="{{ url('search') }}" style="padding: 12px;margin-left: 10px;">
-                        <img src="{{ publicPath() }}img/search.png" class="" style="width: 25px;height: 25px;">
+                        <img src="{{ p() }}img/search.png" class="" style="width: 25px;height: 25px;">
                     </a>
                 </li>
             </ul>
 
-            <img src="{{ publicPath() }}img/full.png" onclick="full();" class="visible-md-block visible-lg-block" style="width: 25px;height: 25px;float: right;margin-top: 12px;" data-toggle="tooltip" data-placement="bottom" title="全屏浏览">
+            <img src="{{ p() }}img/full.png" onclick="full();" class="visible-md-block visible-lg-block" style="width: 25px;height: 25px;float: right;margin-top: 12px;" data-toggle="tooltip" data-placement="bottom" title="全屏浏览">
         </div><!--/.nav-collapse -->
     </div>
 </nav>

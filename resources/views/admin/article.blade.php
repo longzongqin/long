@@ -108,11 +108,11 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="{{ publicPath() }}js/vue.min.js"></script>
-    <script type="text/javascript" src="{{ publicPath() }}js/vueFilter.js"></script>
+    <script type="text/javascript" src="{{ p() }}js/vue.min.js"></script>
+    <script type="text/javascript" src="{{ p() }}js/vueFilter.js"></script>
 
-    <link href="{{ publicPath() }}css/pagination.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" src="{{ publicPath() }}js/jquery.pagination.js"></script>
+    <link href="{{ p() }}css/pagination.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="{{ p() }}js/jquery.pagination.js"></script>
 
     <script>
         var categoryID = 0;

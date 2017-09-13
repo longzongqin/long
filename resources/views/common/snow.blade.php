@@ -1,5 +1,5 @@
 
-    <script src="{{ publicPath() }}js/jquery.let_it_snow.js" type="text/javascript"></script>
+    <script src="{{ p() }}js/jquery.let_it_snow.js" type="text/javascript"></script>
     <style>
         .wrapper {
             height: auto !important;
@@ -269,7 +269,7 @@
                 speed: s[7],
                 count: s[8],
                 size: 5,
-                image: "{{ publicPath() }}img/white-snowflake.png"
+                image: "{{ p() }}img/white-snowflake.png"
             });
         }
 
@@ -295,8 +295,8 @@
             if(bg > 10){
                 bg = 1;
             }
-            $("#snowPc").attr("src","{{ publicPath() }}welcome/"+bg+".jpg");
-            $("#snowPhone").attr("src","{{ publicPath() }}welcome/p"+bg+".jpg");
+            $("#snowPc").attr("src","{{ p() }}welcome/"+bg+".jpg");
+            $("#snowPhone").attr("src","{{ p() }}welcome/p"+bg+".jpg");
         }
         function divClick(){
             changeBg();
@@ -304,8 +304,8 @@
         }
     </script>
 <div id="snowDiv" onclick="divClick();">
-    <img src="{{ publicPath() }}welcome/p1.jpg" id="snowPhone" class="visible-xs-block visible-sm-block" width="100%">
-    <img src="{{ publicPath() }}welcome/1.jpg" id="snowPc" class="visible-md-block visible-lg-block" width="100%">
+    <img src="{{ p() }}welcome/p1.jpg" id="snowPhone" class="visible-xs-block visible-sm-block" width="100%">
+    <img src="{{ p() }}welcome/1.jpg" id="snowPc" class="visible-md-block visible-lg-block" width="100%">
     <canvas width="100%" height="100%" class="flare"></canvas>
     <canvas width="100%" height="100%" class="snow"></canvas>
     <canvas width="100%" height="100%" class="flake"></canvas>

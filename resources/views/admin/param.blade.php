@@ -13,7 +13,7 @@
             font-size: 24px;
         }
     </style>
-    <script src="{{ publicPath() }}js/register-validate.js"></script>
+    <script src="{{ p() }}js/register-validate.js"></script>
     <script>
         $(function () {
             $("#menu-param").addClass("active");

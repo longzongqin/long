@@ -10,11 +10,11 @@
 
     <!-- basic styles -->
 
-    <link href="{{ publicPath() }}admin/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="{{ publicPath() }}admin/css/font-awesome.min.css" />
+    <link href="{{ p() }}admin/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="{{ p() }}admin/css/font-awesome.min.css" />
 
     <!--[if IE 7]>
-    <link rel="stylesheet" href="{{ publicPath() }}admin/css/font-awesome-ie7.min.css" />
+    <link rel="stylesheet" href="{{ p() }}admin/css/font-awesome-ie7.min.css" />
     <![endif]-->
 
     <!-- page specific plugin styles -->
@@ -23,44 +23,44 @@
 
     <!-- ace styles -->
 
-    <link rel="stylesheet" href="{{ publicPath() }}admin/css/ace.min.css" />
-    <link rel="stylesheet" href="{{ publicPath() }}admin/css/ace-rtl.min.css" />
-    <link rel="stylesheet" href="{{ publicPath() }}admin/css/ace-skins.min.css" />
+    <link rel="stylesheet" href="{{ p() }}admin/css/ace.min.css" />
+    <link rel="stylesheet" href="{{ p() }}admin/css/ace-rtl.min.css" />
+    <link rel="stylesheet" href="{{ p() }}admin/css/ace-skins.min.css" />
 
     <!--[if lte IE 8]>
-    <link rel="stylesheet" href="{{ publicPath() }}admin/css/ace-ie.min.css" />
+    <link rel="stylesheet" href="{{ p() }}admin/css/ace-ie.min.css" />
     <![endif]-->
 
-    <link rel="stylesheet" href="{{ publicPath() }}admin/css/base.css" />
+    <link rel="stylesheet" href="{{ p() }}admin/css/base.css" />
 
 
     <!--[if !IE]> -->
 
     <script type="text/javascript">
-        window.jQuery || document.write("<script src='{{ publicPath() }}admin/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+        window.jQuery || document.write("<script src='{{ p() }}admin/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
     </script>
 
     <!-- <![endif]-->
 
     <!--[if IE]>
     <script type="text/javascript">
-        window.jQuery || document.write("<script src='{{ publicPath() }}admin/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+        window.jQuery || document.write("<script src='{{ p() }}admin/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
     </script>
     <![endif]-->
 
     <script type="text/javascript">
-        if("ontouchend" in document) document.write("<script src='{{ publicPath() }}admin/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+        if("ontouchend" in document) document.write("<script src='{{ p() }}admin/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
     </script>
-    <script src="{{ publicPath() }}admin/js/bootstrap.min.js"></script>
-    <script src="{{ publicPath() }}admin/js/typeahead-bs2.min.js"></script>
+    <script src="{{ p() }}admin/js/bootstrap.min.js"></script>
+    <script src="{{ p() }}admin/js/typeahead-bs2.min.js"></script>
 
     <!-- page specific plugin scripts -->
 
     <!-- ace scripts -->
 
-    <script src="{{ publicPath() }}admin/js/ace-elements.min.js"></script>
-    <script src="{{ publicPath() }}admin/js/ace.min.js"></script>
-    <script src="{{ publicPath() }}admin/js/base.js"></script>
+    <script src="{{ p() }}admin/js/ace-elements.min.js"></script>
+    <script src="{{ p() }}admin/js/ace.min.js"></script>
+    <script src="{{ p() }}admin/js/base.js"></script>
 
     <!-- inline scripts related to this page -->
 
@@ -68,13 +68,13 @@
 
     <!-- ace settings handler -->
 
-    <script src="{{ publicPath() }}admin/js/ace-extra.min.js"></script>
+    <script src="{{ p() }}admin/js/ace-extra.min.js"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
     <!--[if lt IE 9]>
-    <script src="{{ publicPath() }}admin/js/html5shiv.js"></script>
-    <script src="{{ publicPath() }}admin/js/respond.min.js"></script>
+    <script src="{{ p() }}admin/js/html5shiv.js"></script>
+    <script src="{{ p() }}admin/js/respond.min.js"></script>
     <![endif]-->
     <style>
         td{word-break: break-all;}
@@ -102,7 +102,7 @@
             <ul class="nav ace-nav">
                 <li class="light-blue">
                     <a data-toggle="dropdown" href="#" class="dropdown-toggle">
-                        <img class="nav-user-photo" src="{{ publicPath() }}admin/avatars/user.png" alt="Jason's Photo" />
+                        <img class="nav-user-photo" src="{{ p() }}admin/avatars/user.png" alt="Jason's Photo" />
                         <span class="user-info">
 									<small>欢迎您</small>
 									{{ session("adminInfo.name") }}

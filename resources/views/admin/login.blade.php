@@ -10,11 +10,11 @@
 
 		<!-- basic styles -->
 
-		<link href="{{ publicPath() }}admin/css/bootstrap.min.css" rel="stylesheet" />
-		<link rel="stylesheet" href="{{ publicPath() }}admin/css/font-awesome.min.css" />
+		<link href="{{ p() }}admin/css/bootstrap.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="{{ p() }}admin/css/font-awesome.min.css" />
 
 		<!--[if IE 7]>
-		  <link rel="stylesheet" href="{{ publicPath() }}admin/css/font-awesome-ie7.min.css" />
+		  <link rel="stylesheet" href="{{ p() }}admin/css/font-awesome-ie7.min.css" />
 		<![endif]-->
 
 		<!-- page specific plugin styles -->
@@ -22,45 +22,45 @@
 
 		<!-- ace styles -->
 
-		<link rel="stylesheet" href="{{ publicPath() }}admin/css/ace.min.css" />
-		<link rel="stylesheet" href="{{ publicPath() }}admin/css/ace-rtl.min.css" />
+		<link rel="stylesheet" href="{{ p() }}admin/css/ace.min.css" />
+		<link rel="stylesheet" href="{{ p() }}admin/css/ace-rtl.min.css" />
 
 		<!--[if lte IE 8]>
-		  <link rel="stylesheet" href="{{ publicPath() }}admin/css/ace-ie.min.css" />
+		  <link rel="stylesheet" href="{{ p() }}admin/css/ace-ie.min.css" />
 		<![endif]-->
 
-		<link rel="stylesheet" href="{{ publicPath() }}admin/css/base.css" />
+		<link rel="stylesheet" href="{{ p() }}admin/css/base.css" />
 
 		<!-- inline styles related to this page -->
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 
 		<!--[if lt IE 9]>
-		<script src="{{ publicPath() }}admin/js/html5shiv.js"></script>
-		<script src="{{ publicPath() }}admin/js/respond.min.js"></script>
+		<script src="{{ p() }}admin/js/html5shiv.js"></script>
+		<script src="{{ p() }}admin/js/respond.min.js"></script>
 
 		<![endif]-->
 
         <!--[if !IE]> -->
 
         <script type="text/javascript">
-            window.jQuery || document.write("<script src='{{ publicPath() }}admin/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+            window.jQuery || document.write("<script src='{{ p() }}admin/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
         </script>
 
         <!-- <![endif]-->
 
         <!--[if IE]>
         <script type="text/javascript">
-            window.jQuery || document.write("<script src='{{ publicPath() }}admin/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+            window.jQuery || document.write("<script src='{{ p() }}admin/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
         </script>
         <![endif]-->
 
         <script type="text/javascript">
-            if("ontouchend" in document) document.write("<script src='{{ publicPath() }}admin/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+            if("ontouchend" in document) document.write("<script src='{{ p() }}admin/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
         </script>
 
-        <script src="{{ publicPath() }}admin/js/bootstrap.min.js"></script>
-        <script src="{{ publicPath() }}admin/js/base.js"></script>
+        <script src="{{ p() }}admin/js/bootstrap.min.js"></script>
+        <script src="{{ p() }}admin/js/base.js"></script>
 	</head>
 
 	<body class="login-layout">
@@ -140,19 +140,19 @@
 		<!--[if !IE]> -->
 
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='{{ publicPath() }}admin/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
+			window.jQuery || document.write("<script src='{{ p() }}admin/js/jquery-2.0.3.min.js'>"+"<"+"/script>");
 		</script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
 <script type="text/javascript">
- window.jQuery || document.write("<script src='{{ publicPath() }}admin/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
+ window.jQuery || document.write("<script src='{{ p() }}admin/js/jquery-1.10.2.min.js'>"+"<"+"/script>");
 </script>
 <![endif]-->
 
 		<script type="text/javascript">
-			if("ontouchend" in document) document.write("<script src='{{ publicPath() }}admin/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
+			if("ontouchend" in document) document.write("<script src='{{ p() }}admin/js/jquery.mobile.custom.min.js'>"+"<"+"/script>");
 		</script>
 
 		<!-- inline scripts related to this page -->

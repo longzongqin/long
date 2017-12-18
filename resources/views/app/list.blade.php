@@ -57,9 +57,9 @@
 @section('body')
     <div class="row">
         @foreach($list as $v)
-        <div class="col-xs-12 col-sm-6 col-md-4" onclick="location='{{ url("article",["id"=>$v->articleID]) }}'">
+        <div class="col-xs-12 col-sm-6 col-md-3" onclick="location='{{ url("article",["id"=>$v->articleID]) }}'">
             <div class="row-item">
-                <img src="{{ $v->imgUrl }}?x-oss-process=image/resize,m_fill,h_300,w_450,limit_0" onerror="defaultImg(this);">
+                <img src="{{ $v->imgUrl }}?x-oss-process=image/resize,m_fill,h_300,w_450,limit_0" onerror="defaultImg(this);" alt="{{ $v->title }}">
                 <h4>{{ $v->title }}</h4>
                 @if(!empty($v->videoUrl))
                 <img src="{{ p() }}img/video.png" class="videoIcon" />

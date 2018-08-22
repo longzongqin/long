@@ -173,7 +173,7 @@
     <div class="article-div">
         <div class="head">
             <div>
-                <img src="{{ $article->imgUrl }}?x-oss-process=image/resize,m_fill,h_200,w_300" onerror="defaultImg(this);">
+                <img src="{{ $article->imgUrl }}?x-oss-process=image/resize,m_fill,h_200,w_300" onerror="defaultImg(this);" alt="{{ $article->title }}">
             </div>
             <div class="row">
                 <h4 class="visible-xs-block">{{ $article->title }}</h4>

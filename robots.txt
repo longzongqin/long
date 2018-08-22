@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /long/
+Sitemap: http://www.longzongqin.cn/sitemap.xml

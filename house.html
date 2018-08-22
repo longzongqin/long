@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>华渝馨园户型图</title>
+    <style>
+        button{
+            padding: 10px 20px;
+            margin-top: 20px;
+            width: 100%;
+            border: 0px;
+            border-radius: 5px;
+            color: white;
+            background: #0c7b94;
+        }
+        .phone{
+            background: black;
+            width: 280px;
+            height: 550px;
+            border-radius: 45px;
+            border: 10px solid black;
+            position: relative;
+        }
+        .phone-head{
+            width: 60%;
+            height: 20px;
+            background: black;
+            border-radius: 0px 0px 20px 20px;
+            margin-left: 20%;
+            position: absolute;
+        }
+        .phone-page{
+            width: 100%;
+            background: white;
+            height: 100%;
+            border-radius: 35px;
+        }
+        .phone-content{
+            padding: 5px 15px;
+        }
+        #longzongqin{
+            margin-left: -15px;
+            border: 0px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="phone">
+    <div class="phone-head"></div>
+    <div class="phone-page">
+      <div class="phone-content">
+          <span>12:30</span>
+          <span style="float: right;">apple</span>
+          <div style="text-align: center;" id="phone-body">
+              <iframe width="280px" height="510px" id="longzongqin" src="http://longzongqin.cn"></iframe>
+              <h1>iPhone X</h1>
+              <br>
+              <br>
+              <br>
+              <br>
+              <h1 id="num" style="font-family: 'YuMincho +36p Kana'; font-size: 60px;">5</h1>
+          </div>
+      </div>
+    </div>
+</div>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020111077923351_1800_3059.jpg'">A1户型</button>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020111358896605_1800_3059.jpg'">A5户型</button>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020111569524470_1800_2082.jpg'">B1户型</button>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020111804952181_2000_2314.jpg'">B5户型</button>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020112044831226_1800_3059.jpg'">C1户型</button>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020112309355966_1800_3059.jpg'">C5户型</button>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020112572927964_1800_3059.jpg'">D1户型</button>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020112824756931_1800_3059.jpg'">E1户型</button>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020113072880415_1800_3059.jpg'">E2户型</button>
+<button onclick="location='http://r9.pccoo.cn/post/20161220/2016122020113365226518_1800_3059.jpg'">F1户型</button>
+
+</body>
+<script>
+    var num = 5;
+    var test = setInterval(function(){
+        num--;
+        document.getElementById("num").innerHTML = num;
+        if(num == 0){
+            clearInterval(test);
+            document.getElementById("longzongqin").style.display = "block";
+        }
+    },1000);
+</script>
+</html>

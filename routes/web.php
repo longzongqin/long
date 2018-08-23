@@ -9,6 +9,8 @@ Route::group(['namespace' => 'App','middleware' => 'user'],function (){
     Route::get('/search','IndexController@search');
     Route::post('/doSearch','IndexController@doSearch');
     Route::post('/addLog','IndexController@addLog');
+    Route::get('/test','IndexController@test');
+
 });
 
 //后台管理
@@ -48,5 +50,10 @@ Route::group(['namespace' => 'Common'],function (){
 
 });
 
-
+Route::group(['namespace' => 'Api'],function (){
+    Route::any('/api/category','ApiController@category');
+    Route::any('/api/search','ApiController@search');
+    Route::any('/api/article','ApiController@article');
+    Route::any('/api/articleDetail','ApiController@articleDetail');
+});
 
